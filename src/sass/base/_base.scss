@@ -1,0 +1,33 @@
+
+
+* {
+    margin: 0; 
+    padding: 0;
+}
+
+body, html {
+    overflow-x: hidden;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: rgb(29, 41, 81);
+    font-family: 'Open Sans', sans-serif;
+}
+
+//Text higlight
+::selection {
+    background-color: lightblue;
+}
+
+//Header
+header.top {
+    padding: 3%;
+    background-color: aliceblue;
+}
+
+.platform-name {
+   font-size: 35px; 
+   font-family: 'Yusei Magic', sans-serif;
+   cursor: pointer;
+}
+
