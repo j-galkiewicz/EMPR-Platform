@@ -10,24 +10,24 @@ body, html {
     position: relative;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: rgb(29, 41, 81);
-    font-family: 'Open Sans', sans-serif;
+    background-color: $colour-dark-blue;
+    font-family: $font-base;
 }
 
 //Text higlight
 ::selection {
-    background-color: lightblue;
+    background-color: $colour-light-blue;
 }
 
 //Header
 header.top {
     padding: 3%;
-    background-color: aliceblue;
+    background-color: $colour-ice-white;
 }
 
 .platform-name {
    font-size: 35px; 
-   font-family: 'Yusei Magic', sans-serif;
+   font-family: $font-header;
    cursor: pointer;
 }
 
