@@ -21,9 +21,11 @@ class App extends React.Component {
               <input type="text" onChange={this.handleChange} />
                 <Header>
                   <div><Menu /></div>
-                </Header>
+                </Header> 
+                <Login />
               </div>
             </div>
+          
       );
     }
 }
