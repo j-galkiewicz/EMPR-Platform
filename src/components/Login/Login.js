@@ -10,13 +10,13 @@ function validateForm() {
     return email.length > 0 && password.length > 0;
   }
 
-  function handleSubmit(event) {
-    event.preventDefault();
+  function handleSubmit(e) {
+    e.preventDefault();
   }
   return (
     <div className="Login">
       <Form onSubmit={handleSubmit}>
-        <Form.Group size="lg" controlId="email">
+        <Form.Group controlId="email">
           <Form.Label>Email</Form.Label>
           <Form.Control
             autoFocus
@@ -25,7 +25,7 @@ function validateForm() {
             onChange={(e) => setEmail(e.target.value)}
           />
         </Form.Group>
-        <Form.Group size="lg" controlId="password">
+        <Form.Group  controlId="password">
           <Form.Label>Password</Form.Label>
           <Form.Control
             type="password"
@@ -33,7 +33,7 @@ function validateForm() {
             onChange={(e) => setPassword(e.target.value)}
           />
         </Form.Group>
-        <ButtonLogPage block size="lg" type="submit" disabled={!validateForm()}>
+        <ButtonLogPage type="submit" disabled={!validateForm()}>
           Login
         </ButtonLogPage>
       </Form>
