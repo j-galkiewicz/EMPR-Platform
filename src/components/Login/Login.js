@@ -10,9 +10,9 @@ function validateForm() {
     return email.length > 0 && password.length > 0;
   }
 
-  function handleSubmit(e) {
-    e.preventDefault();
-  }
+function handleSubmit(e) {
+  e.preventDefault();
+}
   return (
     <div className="Login">
       <Form onSubmit={handleSubmit}>
