@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import Form from "./Form";
-import ButtonLogPage from "../Buttons/ButtonLogPage";
+import Button from "../Buttons/Button";
 
 export default function Login() {
-    const [email, setEmail] = useState(0);
-    const [password, setPassword] = useState(0);
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
   
 function validateForm() {
     return email.length > 0 && password.length > 0;
@@ -33,9 +33,9 @@ function handleSubmit(e) {
             onChange={(e) => setPassword(e.target.value)}
           />
         </Form.Group>
-        <ButtonLogPage type="submit" disabled={!validateForm()}>
+        <Button type="submit" disabled={!validateForm()}>
           Login
-        </ButtonLogPage>
+        </Button>
       </Form>
     </div>
   );
