@@ -12,7 +12,6 @@ const App = () => {
     setName(e.target.value)
   }
 
-
   return (
     <div className="XYZ">
       <div className="menu">
@@ -26,7 +25,6 @@ const App = () => {
             <div>
               <Controller />
             </div>
-  
         </div>
       </div>
     );

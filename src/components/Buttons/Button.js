@@ -7,7 +7,7 @@ const types = {
 
 const Button = props => {
     return (
-        <button 
+        <button className="buttonLogIn"
             style={{
                 backgroundColor: types[props.type]
             }}
