@@ -15,7 +15,7 @@ function handleSubmit(e) {
 }
   return (
     <div className="Login">
-      <Form onSubmit={handleSubmit}>
+      <Form className="FormContainer" onSubmit={handleSubmit}>
         <Form.Group controlId="email">
           <Form.Label>Email</Form.Label>
           <Form.Control
