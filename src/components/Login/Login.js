@@ -33,7 +33,7 @@ function handleSubmit(e) {
             onChange={(e) => setPassword(e.target.value)}
           />
         </Form.Group>
-        <Button type="submit" disabled={!validateForm()}>
+        <Button type="submit" className="btnSubmit" disabled={!validateForm()}>
           Login
         </Button>
       </Form>

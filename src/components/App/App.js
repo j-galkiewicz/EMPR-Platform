@@ -17,13 +17,14 @@ const App = () => {
       <div className="menu">
         <p>{name}</p>
         <input type="text" onChange={handleChange} />
-          <Header>
+          <Header>  
             <div><Menu /></div>
             <Button />
           </Header>
+          <Controller />
           <Login />
             <div>
-              <Controller />
+            
             </div>
         </div>
       </div>

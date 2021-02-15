@@ -3,14 +3,13 @@ import React from 'react'
 const types = {
     "success": "blue",
     "error": "red",
+    "submit": "lightblue",
 }
 
 const Button = props => {
     return (
         <button className="buttonLogIn"
-            style={{
-                backgroundColor: types[props.type]
-            }}
+          
         >{props.name}
         </button>
 

@@ -4,9 +4,9 @@ import React from 'react';
 class Controller extends React.Component {
     //Q: can I use const[count] = useState(0) instead?
     state = { count: 0 }
-  
+    
+  //setState to update state from 0 +
     increase = () => {
-    //setState to update state from 0 +
       this.setState({
         count: this.state.count + 1
       });
