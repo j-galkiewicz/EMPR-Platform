@@ -15,27 +15,7 @@ function handleSubmit(e) {
 }
   return (
     <div className="Login">
-      <Form className="FormContainer" onSubmit={handleSubmit}>
-        <Form.Group controlId="email">
-          <Form.Label>Email</Form.Label>
-          <Form.Control
-            autoFocus
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </Form.Group>
-        <Form.Group  controlId="password">
-          <Form.Label>Password</Form.Label>
-          <Form.Control
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-        </Form.Group>
-        <Button type="submit" className="btnSubmit" disabled={!validateForm()}>
-          Login
-        </Button>
+      <Form >
       </Form>
     </div>
   );

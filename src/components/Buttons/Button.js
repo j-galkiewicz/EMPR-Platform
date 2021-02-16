@@ -8,9 +8,7 @@ const types = {
 
 const Button = props => {
     return (
-        <button className="buttonLogIn"
-          
-        >{props.name}
+        <button className="buttonLogIn">{props.name}
         </button>
 
     );
