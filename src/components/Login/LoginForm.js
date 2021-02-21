@@ -15,16 +15,23 @@ export default function LoginForm() {
         <form className="flex--Formwraper">
           <label className="input--email">
             E-mail
-            <input type="e-mail"></input>
+            <input type="e-mail"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}>
+            </input>
           </label>
           <label className="input--password">
             Password
-            <input type="password"></input>
+            <input type="password" 
+            value={password} 
+            onChange={(e) => setPassword(e.target.value)}>
+            </input>
           </label>
           <Button
             className="btnSubmit"
             type="submit"
             name="Come in"
+            disabled={!validateForm()}
           />
         </form>
       </div>
