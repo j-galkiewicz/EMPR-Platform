@@ -12,6 +12,7 @@ export default function LoginForm() {
 
   return (
     <div className="LoginForm">
+    <h2 className="loginTitle">We've been waiting for you!</h2>
       <div className="flex">
         <form className="flex--Formwraper">
           <label className="input--email">
