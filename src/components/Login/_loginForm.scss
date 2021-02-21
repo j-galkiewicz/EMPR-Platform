@@ -1,5 +1,8 @@
-//Login page 
+//LoginForm
 
+.LoginForm {
+    align-items: center;
+}
 .flex {
     display: flex;
     max-width: 100%;
@@ -25,3 +28,18 @@
     position: relative; 
     font-size: 1.1em;
 }
+
+
+
+.btnSubmit{
+    width: 150px;
+    padding: 3%;
+    margin: 1%;
+    background-color: #f3b3bb;
+    cursor: pointer;
+    padding: 20px 25px;
+    border-radius: 12px;
+    border: none;
+    font-family: inherit;
+}
+

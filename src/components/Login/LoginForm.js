@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Button from "../Buttons/Button";
+import "./_loginForm.scss";
 
 export default function LoginForm() {
   const [email, setEmail] = useState('');

@@ -1,5 +1,6 @@
 import React from "react";
 import HeartIcon from "../Icons/Icon";
+import Button from "../Buttons/Button";
 
 const Header = () => (
     <header className="top"> 
@@ -9,6 +10,8 @@ const Header = () => (
       </div>
         EMPR Platform
         </h1>
+        <Button className="btnLogIn" laybel>
+       </Button>
     </header>
   );
 
