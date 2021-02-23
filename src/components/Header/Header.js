@@ -10,8 +10,8 @@ const Header = () => (
       </div>
         EMPR Platform
         </h1>
-        <Button className="btnLogIn" laybel>
-       </Button>
+        <Button className="btnLogIn" name="Log in" />
+
     </header>
   );
 

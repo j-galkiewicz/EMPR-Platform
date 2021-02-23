@@ -7,6 +7,7 @@
     color: white;
     font-family: 'Yusei Magic', sans-serif;
 }
+
 .LoginForm {
     align-items: center;
     background-color:rgb(29, 41, 81);
@@ -33,7 +34,6 @@
 .input {
     align-content: center;
     position: relative; 
-  
     box-sizing: border-box;
 
     &--email,
@@ -42,24 +42,31 @@
     }
 }
 
-
+#e-mail,
+#password {
+    height: 18%;
+    border: none;
+    width: 100%;
+}
 
 .btnSubmit{
     width: 100%;
-    padding: 10%;
-    margin: 6%;
-    background-color: #f3b3bb;
+    margin: 6px 2px;
+    background-color: rgb(99, 96, 96);
+    color: ivory;
     letter-spacing: 0.4em;
-    opacity: 0.6;
+    opacity: 0.5;
     cursor: pointer;
-    padding: 13px 25px;
+    padding: 13px 20px;
     border-radius: 12px;
     border: none;
     font-family: inherit;
     font-size: 13px;
+    font-weight: bold;
+    
     &:hover {
         letter-spacing: 0.4em;
-        background-color:rgb(99, 96, 96);
+        background-color: #f3b3bb;
         opacity: .8;
         }
     }
