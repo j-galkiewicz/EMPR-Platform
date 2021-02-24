@@ -1,0 +1,42 @@
+//footer
+
+.footer {
+    padding: 2px;
+    font-size: 1.5em;
+    background-color: white;
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .fa {
+    padding: 0.5em;
+    width: 1.125em;
+    text-align: center;
+    text-decoration: none;
+    margin: 3px 2px;
+     
+    &-facebook, 
+    &-instagram, 
+    &-pinterest  {
+      color:black;
+    
+      &:hover {
+        opacity: 0.4;
+      }
+
+    //   @include respond(phone) {
+    //     padding: 0px;
+    //     color: green;
+    //     font-size: 16px;
+    //     bottom: auto;
+    //   }
+    //   @include respond(phone-landscape) {
+    //     padding: 0px;
+    //     color: green;
+    //     font-size: 16px;
+    //     bottom: auto;
+    //   }
+  } 
+}
