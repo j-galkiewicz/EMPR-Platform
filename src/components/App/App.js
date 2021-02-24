@@ -11,7 +11,7 @@ const App = () => {
         <Header>  
           <Menu />
         </Header>
-        <LoginForm />
+         <LoginForm />
         <Footer />
       </div>
     </div>
