@@ -3,7 +3,7 @@
 .footer {
     padding: 2px;
     font-size: 1.5em;
-    background-color: white;
+    background-color: rgba(54, 72, 134, 0.561);
     position: fixed;
     bottom: 0px;
     left: 0;
@@ -17,24 +17,24 @@
     text-decoration: none;
     margin: 3px 2px;
      
-    &-facebook, 
+    &-linkedin, 
     &-instagram, 
-    &-pinterest  {
+    &-twitter  {
       color:black;
+      cursor: pointer;
     
       &:hover {
-        opacity: 0.4;
+        opacity: 0.5;
+        color: aliceblue;
       }
 
     //   @include respond(phone) {
     //     padding: 0px;
-    //     color: green;
     //     font-size: 16px;
     //     bottom: auto;
     //   }
     //   @include respond(phone-landscape) {
     //     padding: 0px;
-    //     color: green;
     //     font-size: 16px;
     //     bottom: auto;
     //   }
