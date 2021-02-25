@@ -16,6 +16,7 @@ const App = () => {
     <div className="XYZ">
       <div className="menu">
 
+
         <Router>
           <div>
             <nav>
@@ -45,9 +46,19 @@ const App = () => {
             <Footer />
           </div>
         </Router>
+
+      <h2>Login</h2>
+        <Header>  
+          <Menu />
+        </Header>
+         <LoginForm />
+        <Footer />
+
       </div>
     </div>
   )
 }
 
+
 export default App;
+
