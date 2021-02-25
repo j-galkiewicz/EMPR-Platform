@@ -1,6 +1,6 @@
-//MENU
+//Menu 
 
-.nav {
+.head__nav {
     text-align: center;
     align-self: center;
     width: 100%;
@@ -14,5 +14,18 @@
         cursor: pointer;
         text-transform: uppercase;
         font-weight: bold;
+        color: rgb(29, 41, 81);
+
+        &:hover {
+            color: rgba(152, 152, 152, 0.714);
+            padding: auto;
+        }
     }
 }
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    align-items: center;
+}
+
