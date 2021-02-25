@@ -2,10 +2,12 @@ import React from "react";
 import HeartIcon from "../Icons/Icon";
 import Button from "../Buttons/Button";
 import Menu from "../Menu/Menu";
+import { Link } from "react-router-dom";
 
 const Header = () => (
   <header className="top"> 
     <Menu />
+    <Link to="/">Home</Link>
     <h1 className="platform-name"> 
       <div>
         <HeartIcon />
