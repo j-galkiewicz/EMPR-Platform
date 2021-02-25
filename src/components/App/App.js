@@ -8,6 +8,7 @@ const App = () => {
   return (
     <div className="XYZ">
       <div className="menu">
+      <h2>Login</h2>
         <Header>  
           <Menu />
         </Header>
@@ -17,6 +18,5 @@ const App = () => {
     </div>
   )
 }
-
 export default App;
 
