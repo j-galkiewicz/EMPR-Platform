@@ -3,17 +3,21 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div>
+    <div className="wrapper">
         <h2>HOME</h2>
-        <div>
+     
+        <div className="box-top"></div>
+        <div className="box-1">
             Link 1
         </div>
-        <div>
+        <div className="box-2">
             Link 2
         </div>
-        <div>
+        <div className="box-3">
             Geolokalizacja
         </div>
+
+        <div className="box-bottom"></div>
     </div>
   )
 }
