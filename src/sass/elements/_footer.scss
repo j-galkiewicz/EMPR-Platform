@@ -28,15 +28,15 @@
         color: aliceblue;
       }
 
-    //   @include respond(phone) {
-    //     padding: 0px;
-    //     font-size: 16px;
-    //     bottom: auto;
-    //   }
-    //   @include respond(phone-landscape) {
-    //     padding: 0px;
-    //     font-size: 16px;
-    //     bottom: auto;
-    //   }
+      @include respond(phone) {
+        padding: 0px;
+        font-size: 16px;
+        bottom: auto;
+      }
+      @include respond(phone-landscape) {
+        padding: 0px;
+        font-size: 16px;
+        bottom: auto;
+      }
   } 
 }
