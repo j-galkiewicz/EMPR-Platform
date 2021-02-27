@@ -14,7 +14,14 @@
     margin: 2%;
     height: auto;
     overflow: hidden;
-}
+
+    @include respond(phone) {
+        align-items: center;
+        grid-template-columns: repeat(3, 5fr);
+        grid-gap: 0.08rem;
+        }
+  }
+
 .box {
 
     &-top {
@@ -27,6 +34,10 @@
         grid-row: 2 / 3;
         background-color: pink;
         height: 250px;
+        @include respond(phone) {
+            grid-column: 2 / 3;
+            grid-row: 1 / 1;
+            }
     }
     &-2 {
         grid-column: 2;
@@ -39,6 +50,10 @@
         grid-row: 2 / 3;
         background-color: gold;
         height: 250px;
+        @include respond(phone) {
+            grid-column: 2 / 3;
+            grid-row: 3 / 3;
+            }
     }
     &-bottom {
         grid-column: 1 / 3;
