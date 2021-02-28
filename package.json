@@ -40,5 +40,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "======= work in progress",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j-galkiewicz/EMPR-Platform.git"
+  },
+  "author": "JG",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/j-galkiewicz/EMPR-Platform/issues"
+  },
+  "homepage": "https://github.com/j-galkiewicz/EMPR-Platform#readme"
 }
