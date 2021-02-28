@@ -15,16 +15,14 @@ const App = () => {
       <div className="menu">
         <Router>
           <Header />
-
-          <Switch>
+           <Switch>
             <Route path="/login">
               <LoginForm />
             </Route>
             <Route path="/">
               <Home />
             </Route>
-          </Switch>
-
+           </Switch>
           <Footer />
         </Router>
       </div>

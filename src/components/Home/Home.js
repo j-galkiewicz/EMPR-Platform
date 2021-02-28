@@ -7,7 +7,7 @@ const Home = () => {
         <h2>HOME</h2>
         <div className="box--top"></div>
           <div className="box--1">
-              MyGiving
+              MyGiving - geolocation
           </div>
           <div className="box--2">
               MySupport
@@ -19,5 +19,4 @@ const Home = () => {
     </div>
   )
 }
-
 export default Home;

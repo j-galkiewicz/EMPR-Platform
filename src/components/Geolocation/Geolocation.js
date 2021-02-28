@@ -5,7 +5,9 @@ const Geolocation = () => {
     <div>
         <h2>Geolokalizacja</h2>
         <div>
-            mapka
+            mapka Api key=AIzaSyDMEeH8Zj-faoNBnCihSXhb66fhfFTf3Wc
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMEeH8Zj-faoNBnCihSXhb66fhfFTf3Wc"
+            type="text/javascript"></script>
         </div>
     </div>
   )
