@@ -5,19 +5,17 @@ const Home = () => {
   return (
     <div className="wrapper">
         <h2>HOME</h2>
-     
-        <div className="box-top"></div>
-        <div className="box-1">
-            Link 1
-        </div>
-        <div className="box-2">
-            Link 2
-        </div>
-        <div className="box-3">
-            Geolokalizacja
-        </div>
-
-        <div className="box-bottom"></div>
+        <div className="box--top"></div>
+          <div className="box--1">
+              MyGiving
+          </div>
+          <div className="box--2">
+              MySupport
+          </div>
+          <div className="box--3">
+              MyKnowledge
+          </div>
+        <div className="box--bottom"></div>
     </div>
   )
 }
