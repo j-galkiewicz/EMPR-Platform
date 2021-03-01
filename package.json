@@ -7,7 +7,6 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "compass": "^0.1.1",
-    "node-modules": "^1.0.1",
     "node-sass": "4.14.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -41,17 +40,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "description": "======= work in progress",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/j-galkiewicz/EMPR-Platform.git"
-  },
-  "author": "JG",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/j-galkiewicz/EMPR-Platform/issues"
-  },
-  "homepage": "https://github.com/j-galkiewicz/EMPR-Platform#readme"
+  }
 }
