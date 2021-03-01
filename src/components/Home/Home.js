@@ -7,7 +7,7 @@ const Home = () => {
         <h2>HOME</h2>
         <div className="box--top"></div>
           <div className="box--1">
-              MyGiving - geolocation
+              <Link to="/geolocation">MyGiving - geolocation</Link>
           </div>
           <div className="box--2">
               MySupport

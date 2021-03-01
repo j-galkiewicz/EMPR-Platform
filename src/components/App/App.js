@@ -3,6 +3,7 @@ import Header from "../Header/Header";
 import LoginForm from "../Login/LoginForm";
 import Footer from "../Footer/Footer";
 import Home from "../Home/Home";
+import Geolocation from "../Geolocation/Geolocation";
 import {
   BrowserRouter as Router,
   Switch,
@@ -16,6 +17,9 @@ const App = () => {
         <Router>
           <Header />
            <Switch>
+           <Route path="/geolocation">
+              <Geolocation />
+            </Route>
             <Route path="/login">
               <LoginForm />
             </Route>
