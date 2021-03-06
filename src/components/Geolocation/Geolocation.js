@@ -5,7 +5,7 @@ import {
 } from "@react-google-maps/api";
 
 const mapContainerStyle = {
-  height: "70vh",
+  height: "60vh",
   width: "50vw",
 };
 const center = {
@@ -31,7 +31,7 @@ const locationsDB = [
 
 const Geolocation = () => {
 const { isLoaded, loadError } = useLoadScript({
-  googleMapsApiKey: 'AIzaSyDMEeH8Zj-faoNBnCihSXhb66fhfFTf3Wc',
+  googleMapsApiKey: 'AIzaSyCtjNOuoWYaK2ly0J6G_g8lfhLTZET4F54',
   libraries,
 });
 
@@ -41,13 +41,22 @@ if (!isLoaded) return "Loading...";
   return (
     <div>
         <h2>Geolokalizacja</h2>
-        <GoogleMap
+        <div className="geowrapper">
+        <GoogleMap className="geo-box"
           id="map"
           mapContainerStyle={mapContainerStyle}
           zoom={8}
           center={center}
       ></GoogleMap>
+      
+        <div className="geo-box1">
+
+        </div>
+
+      
+     </div>
     </div>
+   
   )
 }
 

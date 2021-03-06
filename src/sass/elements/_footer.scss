@@ -1,8 +1,8 @@
 //footer
 
 .footer {
-    padding: 2px;
-    font-size: 1.5em;
+    padding: 1.5px;
+    font-size: 1.4em;
     background-color: rgba(54, 72, 134, 0.561);
     position: fixed;
     bottom: 0px;
@@ -27,7 +27,11 @@
         opacity: 0.5;
         color: aliceblue;
       }
-
+      @include respond(tab-land) {
+        padding: 4px;
+        font-size: 19px;
+        bottom: auto;
+      }
       @include respond(phone) {
         padding: 0px;
         font-size: 16px;

@@ -1,0 +1,31 @@
+//Geolocation page 
+
+.geowrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid:
+    'geo-box geo-box1';
+
+
+    gap: 3%;
+    padding: 1%;
+    margin: 2%;
+    height: auto;
+    overflow: hidden;
+}
+
+.geo {
+    
+    &-box {
+        grid-column: 1 / 1;
+    }
+    &-box1 {
+       grid-column: 2 / span 2;
+       background-color: honeydew; 
+       height: 60vh;
+       width: 41vw;
+       border-radius: 40px;
+       box-shadow: 2px 2px;
+    }
+}
