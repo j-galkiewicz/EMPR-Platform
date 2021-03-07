@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../Buttons/Button";
 import {
   GoogleMap,
   useLoadScript,
@@ -40,7 +41,7 @@ if (!isLoaded) return "Loading...";
 
   return (
     <div>
-        <h2>Geolokalizacja</h2>
+        <h2 className="myGiving-title">My Giving</h2>
         <div className="geowrapper">
         <GoogleMap className="geo-box"
           id="map"
@@ -50,7 +51,8 @@ if (!isLoaded) return "Loading...";
       ></GoogleMap>
       
         <div className="geo-box1">
-
+          <p className="geoDetails">Organization details:</p>
+          <Button className="btnGeo" name="Make an appointment"></Button> 
         </div>
 
       

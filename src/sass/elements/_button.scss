@@ -27,4 +27,18 @@
     color: rgb(99, 96, 96);
     }
 }
+.btnGeo {
+    float: right;
+    font-size: medium;
+    color: white;
+    cursor: pointer;
+    margin: 25px;
+    padding: 20px 25px;
+    border-radius: 12px;
+    top: 470px;
 
+    border: none;
+    position:absolute; 
+    text-decoration: none;
+    display: inline-block;
+}
