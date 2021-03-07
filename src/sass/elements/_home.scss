@@ -39,6 +39,7 @@
     &--1 {
         grid-column: 1 / 2;
         grid-row: 2 / 3;  
+        
         @include respond(phone) {
             grid-column: 2 / 3;
             grid-row: 1 / 1;
@@ -63,3 +64,8 @@
         }
 }
 
+.geolocation-link {
+    text-decoration: none;
+    justify-items: center;
+    padding: 80px;
+}

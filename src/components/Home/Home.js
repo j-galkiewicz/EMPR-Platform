@@ -1,4 +1,5 @@
 import React from "react";
+import HeartIcon from "../Icons/Icon";
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -7,7 +8,8 @@ const Home = () => {
         <h2>HOME</h2>
         <div className="box--top"></div>
           <div className="box--1">
-              <Link to="/geolocation">MyGiving - geolocation</Link>
+              <Link to="/geolocation" className="geolocation-link">MyGiving - geolocation</Link>
+              <HeartIcon className="geolocation-heart"/>
           </div>
           <div className="box--2">
               MySupport
