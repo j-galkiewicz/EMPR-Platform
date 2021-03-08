@@ -6,7 +6,7 @@ const Button = props => {
         <button
             className={props.className}
             type={props.type}>
-            <Link to="/login">{props.name}</Link>
+            {props.redirect !== " " && props.redirect !== undefined ? <Link to={props.link}>{props.name}</Link> : props.name}
             {/* {props.name} */}
         </button>
     )
