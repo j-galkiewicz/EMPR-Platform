@@ -26,6 +26,9 @@
     text-transform: uppercase;
     color: rgb(99, 96, 96);
     }
+    @include respond(phone) {
+        display: none;
+    }
 }
 .btnGeo {
     float: right;
