@@ -31,14 +31,15 @@
     }
 }
 .btnGeo {
-    float: right;
     font-size: medium;
-    color: white;
+    background-color: $colour-light-blue;
+    color: rgb(99, 96, 96);
     cursor: pointer;
     margin: 25px;
     padding: 20px 25px;
     border-radius: 12px;
-    top: 470px;
+    top: 80%;
+    right: 15%;
     border: none;
     position:absolute; 
     text-decoration: none;

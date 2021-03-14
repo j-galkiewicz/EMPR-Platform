@@ -91,3 +91,11 @@ ul li {
     }
 }
 
+.toggle {
+    display: none;
+    @include respond(phone) {
+        display: block;
+        cursor: pointer;
+        text-aligne: center;
+    }
+}
