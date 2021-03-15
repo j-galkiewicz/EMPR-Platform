@@ -58,7 +58,7 @@ const Geolocation = () => {
         <div className="geo-box1">
           <p className="geoDetails">Organization details:</p>
             <span className="geoDetails--more"> 
-              <p>Name</p>
+
             </span>
             <br></br>
           <label className="geoDetails">Choose date (calendar)</label>
