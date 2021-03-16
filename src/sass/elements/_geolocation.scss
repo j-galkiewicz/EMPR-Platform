@@ -19,7 +19,6 @@
 }
 
 .geo {
-    
     &-box {
         grid-column: 1 / 1;
         @include respond(phone) {
@@ -28,19 +27,33 @@
             }
         }
     &-box1 {
-       grid-column: 2 / span 2;
+       grid-column: 1 / 2;
        background-color: $colour-ice-white; 
        height: 60vh;
-       width: 41vw;
+       width: 45vw;
        border-radius: 40px;
        box-shadow: 2px 2px;
        @include respond(phone) {
-           grid-row: 2 / span 2;
+           grid-row: 1 / 2;
            height: 40vh;
            width: 95vw;
            grid-column: 1 / 1;
         }
     }
+    &-box2 {
+        grid-column: 2 / 2;
+        background-color: $colour-ice-white; 
+        height: 60vh;
+        width: 45vw;
+        border-radius: 40px;
+        box-shadow: 2px 2px;
+        @include respond(phone) {
+            grid-row: 2 / 2;
+            height: 40vh;
+            width: 95vw;
+            grid-column: 1 / 1;
+         }
+     }
 }
 
 .myGiving-title {
