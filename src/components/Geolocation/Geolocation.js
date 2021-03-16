@@ -9,9 +9,9 @@ import mapStyle from './mapStyle'
 import locationsDB from './locationsDB'
 
 const mapContainerStyle = {
-  height: "60vh",
-  width: "50vw",
-};
+  height: 'inherit',
+}
+
 const center = {
   lat: 50.110924,
   lng: 8.682127
@@ -35,27 +35,29 @@ const Geolocation = () => {
 
   return (
     <div>
-        <h2 className="myGiving-title">My Giving</h2>
-        <div className="geowrapper">
+      <h2 className="myGiving-title">My Giving</h2>
+      <div className="geowrapper">
+       <div className="geo-box1">
         <GoogleMap className="geo-box"
-          id="map"
-          mapContainerStyle={mapContainerStyle}
-          zoom={8}
-          center={center}
-          options={options}
-      >
-        {markers.map((marker, id) => (
-          <Marker
-            key={id}
-            position={{
-              lat: marker.lat,
-              lng: marker.lng
-            }}
-          />
-        ))}
-      </GoogleMap>
-      
-        <div className="geo-box1">
+            id="map"
+            zoom={6}
+            center={center}
+            options={options}
+            mapContainerStyle={mapContainerStyle}
+          >
+          {markers.map((marker, id) => (
+            <Marker
+              key={id}
+              position={{
+                lat: marker.lat,
+                lng: marker.lng
+              }}
+            />
+          ))}
+        </GoogleMap>
+       </div>
+    
+        <div className="geo-box2">
           <p className="geoDetails">Organization details:</p>
             <span className="geoDetails--more"> 
 
