@@ -24,8 +24,8 @@
         @include respond(phone) {
             grid-column: 1 / 1;
             grid-row: 1 / 2;
-            }
         }
+    }
     &-box1 {
        grid-column: 1 / 2;
        background-color: $colour-ice-white; 
@@ -33,6 +33,7 @@
        width: 45vw;
        border-radius: 40px;
        box-shadow: 2px 2px;
+       box-sizing: border-box;
        @include respond(phone) {
            grid-row: 1 / 2;
            height: 40vh;
@@ -47,6 +48,7 @@
         width: 45vw;
         border-radius: 40px;
         box-shadow: 2px 2px;
+        box-sizing: border-box;
         @include respond(phone) {
             grid-row: 2 / 2;
             height: 40vh;

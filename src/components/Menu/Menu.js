@@ -4,8 +4,8 @@ import React from 'react';
 const Menu = () => {
     return (
         <nav className="head__nav">
-        <div class="toggle">
-            <i class="fa fa-bars menu" aria-hidden="true"></i>
+        <div className="toggle">
+            <i className="fa fa-bars menu" aria-hidden="true"></i>
         </div>
             <ul>
                 <li><a className="head__nav--item-login" href="/login">Log in</a></li>   

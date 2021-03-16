@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Button from "../Buttons/Button";
 import {
   GoogleMap,
   useLoadScript,
@@ -7,6 +6,8 @@ import {
 } from "@react-google-maps/api";
 import mapStyle from './mapStyle'
 import locationsDB from './locationsDB'
+import MapInfo from './MapInfo'
+import AppointmentForm from './AppointmentForm'
 
 const mapContainerStyle = {
   height: 'inherit',
@@ -29,6 +30,7 @@ const Geolocation = () => {
     libraries,
   });
   const [markers, setMarkers] = useState(locationsDB)
+  const [appointmentFormDisplay, setAppointmentFormDisplay] = useState(false)
 
   if (loadError) return "Error";
   if (!isLoaded) return "Loading...";
@@ -52,20 +54,16 @@ const Geolocation = () => {
                 lat: marker.lat,
                 lng: marker.lng
               }}
+              onClick={() => {
+                setAppointmentFormDisplay(true)
+              }}
             />
           ))}
         </GoogleMap>
        </div>
     
-        <div className="geo-box2">
-          <p className="geoDetails">Organization details:</p>
-            <span className="geoDetails--more"> 
-
-            </span>
-            <br></br>
-          <label className="geoDetails">Choose date (calendar)</label>
-          <input type="date" id="appointment" name="appointment" />
-          <Button className="btnGeo" name="Make an appointment" link="/"></Button> 
+        <div className="geo-box2 padding-20">
+          {appointmentFormDisplay ? <AppointmentForm /> : <MapInfo />}
         </div>
 
      </div>
