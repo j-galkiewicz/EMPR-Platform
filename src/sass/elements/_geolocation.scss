@@ -50,4 +50,10 @@
 }  
 .geoDetails {
     padding: 3%;
+
+    &--more {
+        position: relative;
+        overflow: hidden;
+        background: hotpink;
+    }
 }
