@@ -5,12 +5,11 @@ const Button = props => {
     return (
         <button
             className={props.className}
-            type={props.type}>
-            <Link to="/login">{props.name}</Link>
-            {/* {props.name} */}
+            type={props.type}
+        >
+            {(props.link !== '' && props.link !== undefined) ? <Link to={props.link}>{props.name}</Link> : props.name}
         </button>
     )
 }
 
 export default Button
-

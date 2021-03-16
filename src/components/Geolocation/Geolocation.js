@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "../Buttons/Button";
 import {
   GoogleMap,
   useLoadScript,
+  Marker
 } from "@react-google-maps/api";
+import mapStyle from './mapStyle'
+import locationsDB from './locationsDB'
 
 const mapContainerStyle = {
   height: "60vh",
@@ -14,30 +17,21 @@ const center = {
   lng: 8.682127
 };
 const libraries = ["places"];
-
-const locationsDB = [
-  {
-    name: "Frankfurt hosptial",
-    lat: 50.110924,
-    lng: 8.682127,
-    description: "The best place"
-  },
-  {
-    name: "Berlin hosptial",
-    lat: 52.110924,
-    lng: 12.682127,
-    description: "Blood premium"
-  },
-]
+const options = {
+  styles: mapStyle,
+  disableDefaultUI: true,
+  zoomControl: true,
+}
 
 const Geolocation = () => {
-const { isLoaded, loadError } = useLoadScript({
-  googleMapsApiKey: 'AIzaSyCtjNOuoWYaK2ly0J6G_g8lfhLTZET4F54',
-  libraries,
-});
+  const { isLoaded, loadError } = useLoadScript({
+    googleMapsApiKey: 'AIzaSyA0sEe-MGOXzeLRIkrWYTEP6nvQlQEuvEQ',
+    libraries,
+  });
+  const [markers, setMarkers] = useState(locationsDB)
 
-if (loadError) return "Error";
-if (!isLoaded) return "Loading...";
+  if (loadError) return "Error";
+  if (!isLoaded) return "Loading...";
 
   return (
     <div>
@@ -48,14 +42,26 @@ if (!isLoaded) return "Loading...";
           mapContainerStyle={mapContainerStyle}
           zoom={8}
           center={center}
-      ></GoogleMap>
+          options={options}
+      >
+        {markers.map((marker, id) => (
+          <Marker
+            key={id}
+            position={{
+              lat: marker.lat,
+              lng: marker.lng
+            }}
+          />
+        ))}
+      </GoogleMap>
       
         <div className="geo-box1">
           <p className="geoDetails">Organization details:</p>
-          <Button className="btnGeo" name="Make an appointment"></Button> 
+          <label className="geoDetails">Choose date (calendar)</label>
+          <input type="date" id="appointment" name="appointment" />
+          <Button className="btnGeo" name="Make an appointment" link="/"></Button> 
         </div>
 
-      
      </div>
     </div>
    
