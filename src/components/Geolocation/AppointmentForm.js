@@ -18,6 +18,8 @@ const AppointmentForm = () => {
             <label className="geoDetails">Choose date (calendar)</label>
             <input type="date" id="appointment" name="appointment" />
             <Button className="btnGeo" name="Make an appointment" link="/"></Button>
+            <br /><br />
+            <Button className="btnGeo" name="Annuluj"></Button>
         </div>
     )
 }
