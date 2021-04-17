@@ -4,17 +4,17 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div className="wrapper">
-        <div className="box--top"></div>
-          <div className="box--1">
-              <Link to="/geolocation" className="geolocation-link">MyGiving</Link>
+        <div className="home--top"></div>
+          <div className="home--myGiving">
+              <Link to="/geolocation" class="home--myGiving-title">MyGiving</Link>
           </div>
-          <div className="box--2">
+          <div className="home--mySupport">
               MySupport
           </div>
-          <div className="box--3">
+          <div className="home--myKnowledge">
               MyKnowledge
           </div>
-        <div className="box--bottom"></div>
+        <div className="home--bottom"></div>
     </div>
   )
 }
