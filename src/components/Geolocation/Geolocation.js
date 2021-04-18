@@ -39,8 +39,8 @@ const Geolocation = () => {
     <div>
       <h2 className="myGiving-title">My Giving</h2>
       <div className="geowrapper">
-       <div className="geo-box1">
-        <GoogleMap className="geo-box"
+       <div className="geo-map">
+        <GoogleMap className="geo-map"
             id="map"
             zoom={6}
             center={center}
