@@ -62,7 +62,7 @@ const Geolocation = () => {
         </GoogleMap>
        </div>
     
-        <div className="geo-box2 padding-20">
+        <div className="geo-frontpage">
           {appointmentFormDisplay ? <AppointmentForm /> : <MapInfo />}
         </div>
 
