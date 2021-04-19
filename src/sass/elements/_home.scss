@@ -45,13 +45,12 @@
         height: 200px;
         cursor: pointer;
         background-color: #79BEEE;
-        padding: 40px;
-        font-size: 40px;
-        margin-left: 4em;
+        padding: 30px;
+        font-size: 35px;
+        margin-left: 3em;
         @include respond(tab-land) {
             margin-left: auto;
-            font-size: 1.8rem;
-            height: 180px;
+          
           }
         @include respond(phone) {
             height: 70px;
