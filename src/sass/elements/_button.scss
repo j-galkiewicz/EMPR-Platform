@@ -26,10 +26,10 @@
     text-transform: uppercase;
     color: rgb(99, 96, 96);
     }
-    @include respond(phone) {
-        display: none;
+        @include respond(phone) {
+            display: none;
+        }
     }
-}
 .btnGeo {
     font-size: medium;
     background-color: $colour-light-blue;
