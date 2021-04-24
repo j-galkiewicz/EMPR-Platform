@@ -5,7 +5,8 @@
     align-self: center;
     width: 100%;
 
-    &--item, &-login {
+    &--item, 
+    &-login {
         position: inline-block;
         min-height: 15px;
         padding:  1rem;
@@ -29,12 +30,12 @@
                 height: 12vh;
                 padding: 2rem 0 0;
                 text-decoration: none;
+                }
+                &:hover {
+                    color: rgba(135, 134, 134, 0.652);
+                    padding: auto;
+                    }
             }
-            &:hover {
-                color: rgba(135, 134, 134, 0.652);
-                padding: auto;
-            }
-        }
         @include respond(tab-land) {
             font-size: .8rem;
             letter-spacing: .2rem;
