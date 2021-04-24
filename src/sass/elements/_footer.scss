@@ -19,10 +19,9 @@
      
     &-linkedin, 
     &-instagram, 
-    &-twitter  {
+    &-twitter {
       color:black;
       cursor: pointer;
-    
       &:hover {
         opacity: 0.5;
         color: aliceblue;
@@ -43,5 +42,5 @@
         font-size: 16px;
         bottom: auto;
       }
-  } 
-}
+    } 
+  }
